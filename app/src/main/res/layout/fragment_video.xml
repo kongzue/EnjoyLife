@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff">
+
+    <com.qbw.customview.RefreshLoadMoreLayout
+        android:id="@+id/refreshView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:rll_bg="#fff"
+        app:rll_footer_height="44dp"
+        app:rll_footer_hint_loading="正在加载"
+        app:rll_footer_hint_normal="上拉加载更多"
+        app:rll_footer_hint_ready="松开开始加载"
+        app:rll_footer_progress="@drawable/img_loading"
+        app:rll_footer_progress_size="16dp"
+        app:rll_header_height="48dp"
+        app:rll_header_hint_loading="正在加载"
+        app:rll_header_hint_normal="下拉开始刷新"
+        app:rll_header_hint_ready="松开开始刷新"
+        app:rll_header_progress="@drawable/img_loading"
+        app:rll_header_progress_size="16dp"
+        app:rll_textcolor="#1b1b1b">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:divider="@color/colorWhite"
+            android:dividerHeight="0dp">
+
+        </ListView>
+
+    </com.qbw.customview.RefreshLoadMoreLayout>
+
+</RelativeLayout>

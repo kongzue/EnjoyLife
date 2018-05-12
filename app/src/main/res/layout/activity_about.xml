@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AboutActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingHorizontal="15dp"
+            android:paddingBottom="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="120dp"
+                android:src="@mipmap/img_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/app_name"
+                android:textColor="#dc000000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/introduce"
+                android:layout_marginHorizontal="25dp"
+                android:textColor="#7b000000"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/author_name"
+                android:textColor="#dc000000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/author_info"
+                android:layout_marginHorizontal="25dp"
+                android:textColor="#7b000000"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/link_github"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/link_github"
+                android:textColor="#4472c4"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/author_info2"
+                android:layout_marginHorizontal="25dp"
+                android:textColor="#7b000000"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/link_xhb_el"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/link_enjoylife"
+                android:textColor="#4472c4"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/author_info3"
+                android:layout_marginHorizontal="25dp"
+                android:textColor="#7b000000"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/opensource_framework"
+                android:textColor="#dc000000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="空祖家的对话框："
+                android:layout_marginHorizontal="25dp"
+                android:textColor="#7b000000"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/link_kongzue_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="5dp"
+                android:text="https://github.com/kongzue/Dialog"
+                android:textColor="#4472c4"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Kongzue BaseFramework框架："
+                android:layout_marginHorizontal="25dp"
+                android:textColor="#7b000000"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/link_kongzue_baseframework"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="5dp"
+                android:text="https://github.com/kongzue/BaseFramework"
+                android:textColor="#4472c4"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Kongzue BaseOkHttp："
+                android:layout_marginHorizontal="25dp"
+                android:textColor="#7b000000"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/link_kongzue_baseOkHttp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="5dp"
+                android:text="https://github.com/kongzue/BaseOkHttp"
+                android:textColor="#4472c4"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="KongzueUpdateSDK："
+                android:layout_marginHorizontal="25dp"
+                android:textColor="#7b000000"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/link_kongzue_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="5dp"
+                android:text="https://github.com/kongzue/KongzueUpdateSDK"
+                android:textColor="#4472c4"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Fresco："
+                android:layout_marginHorizontal="25dp"
+                android:textColor="#7b000000"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/link_fresco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="5dp"
+                android:text="https://github.com/facebook/fresco"
+                android:textColor="#4472c4"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="RefreshLoadMoreLayout："
+                android:layout_marginHorizontal="25dp"
+                android:textColor="#7b000000"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/link_RefreshLoadMoreLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="5dp"
+                android:text="https://github.com/qbaowei/RefreshLoadMoreLayout"
+                android:textColor="#4472c4"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="PhotoView："
+                android:layout_marginHorizontal="25dp"
+                android:textColor="#7b000000"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/link_PhotoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="5dp"
+                android:text="https://github.com/chrisbanes/PhotoView"
+                android:textColor="#4472c4"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="glide："
+                android:layout_marginHorizontal="25dp"
+                android:textColor="#7b000000"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/link_glide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="5dp"
+                android:text="https://github.com/bumptech/glide"
+                android:textColor="#4472c4"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="GSYVideoPlayer："
+                android:layout_marginHorizontal="25dp"
+                android:textColor="#7b000000"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/link_GSYVideoPlayer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="5dp"
+                android:text="https://github.com/CarGuo/GSYVideoPlayer"
+                android:textColor="#4472c4"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="SwipeBack："
+                android:layout_marginHorizontal="25dp"
+                android:textColor="#7b000000"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/link_SwipeBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="5dp"
+                android:text="https://github.com/tyzlmjj/SwipeBack"
+                android:textColor="#4472c4"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/box_table"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true">
+
+        <com.kongzue.dialog.util.BlurView
+            android:id="@+id/blur"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/box_table_child"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="5dp">
+
+                <LinearLayout
+                    android:id="@+id/btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="3dp"
+                        android:src="@mipmap/img_back_blue" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="center"
+                        android:text="返回"
+                        android:textColor="#2d6cee"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/btn_share"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:paddingHorizontal="10dp"
+                    android:src="@mipmap/img_share" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/split_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="关于"
+                android:textColor="#dc000000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

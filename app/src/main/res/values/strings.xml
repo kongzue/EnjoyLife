@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">一日读</string>
+    <string name="introduce">每天一张精选妹纸图、一个精选小视频，一篇知乎美文。\n\n图片数据内容来源于图虫摄影网 \n\n视频数据来源于开眼视频 \n\n</string>
+    <string name="author_name">关于作者</string>
+    <string name="author_info">\@Kongzue\n软件攻城狮，UI设计狮，宅一只，没钱没车没老婆，倒有梦想一堆，在思想的碰撞中永生，于绝妙创意中不朽。我，一个粉刷着理想墙的工匠\n\n\@Xiaohaibin\n用汗水灌溉梦想，用梦想创造奇迹。\n\n本项目Github地址：</string>
+    <string name="author_info2">本项目由\@Kongzue完成开发，灵感来源于\@Xiaohaibin的原作开源项目“乐享”：</string>
+    <string name="author_info3">本项目完全开源，如果你觉得不错，可以帮忙分享给你更多的朋友，这是我最大的动力和支持，非常感谢！\n\n</string>
+    <string name="link_github">https://github.com/kongzue/EnjoyLife</string>
+    <string name="link_enjoylife">https://github.com/xiaohaibin/EnjoyLife</string>
+    <string name="opensource_framework">开源框架</string>
+
+</resources>
