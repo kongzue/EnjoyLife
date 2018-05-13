@@ -14,6 +14,8 @@
 <img src="https://img.shields.io/badge/Homepage-Kongzue.com-brightgreen.svg" alt="Maven">
 </a>
 
+Kongzue's Dialog、BaseFramework、BaseOkHttp框架的最佳实践Demo
+
 ![EnjoyLife](https://github.com/kongzue/Res/raw/master/app/src/main/res/mipmap-xxxhdpi/img_photo_onedayread_s.png)
 
 ### 体验版下载
