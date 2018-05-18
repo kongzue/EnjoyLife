@@ -13,6 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.kongzue.baseframework.BaseActivity;
+import com.kongzue.baseframework.interfaces.Layout;
 import com.kongzue.dialog.listener.OnMenuItemClickListener;
 import com.kongzue.dialog.util.BlurView;
 import com.kongzue.dialog.v2.BottomMenu;
@@ -32,6 +33,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+@Layout(R.layout.activity_zhihu_details)
 public class ZhihuDetailsActivity extends SwipBackActivity {
 
     private WebView webView;
@@ -40,13 +42,6 @@ public class ZhihuDetailsActivity extends SwipBackActivity {
     private LinearLayout boxTableChild;
     private LinearLayout btnBack;
     private ImageView btnShare;
-
-    @SuppressLint("MissingSuperCall")
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState, R.layout.activity_zhihu_details);
-        setTranslucentStatus(true, true);
-    }
 
     @Override
     public void initViews() {
@@ -62,6 +57,7 @@ public class ZhihuDetailsActivity extends SwipBackActivity {
 
     @Override
     public void initDatas() {
+        setTranslucentStatus(true, true);
         blur.setOverlayColor(Color.argb(200, 235, 235, 235));
         blur.setRadius(me, 0, 0);
         boxTable.setLayoutParams(new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, dip2px(me, 50) + getStatusBarHeight()));

@@ -5,6 +5,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.kongzue.baseframework.BaseFragment;
+import com.kongzue.baseframework.interfaces.Layout;
 import com.kongzue.enjoylife.R;
 import com.kongzue.enjoylife.activity.ZhihuDetailsActivity;
 import com.kongzue.enjoylife.adapter.VideoListAdapter;
@@ -22,6 +23,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
+@Layout(R.layout.fragment_zhihu)
 public class ZhihuFragment extends BaseFragment implements RefreshLoadMoreLayout.CallBack {
 
     private List<ZhihuListAdapter.ZhihuBean> ZhihuBeanList = new ArrayList<>();
@@ -29,11 +31,6 @@ public class ZhihuFragment extends BaseFragment implements RefreshLoadMoreLayout
 
     private RefreshLoadMoreLayout refreshView;
     private ListView listView;
-
-    @Override
-    public int getLayout() {
-        return R.layout.fragment_zhihu;
-    }
 
     @Override
     public void initViews() {
@@ -101,7 +98,7 @@ public class ZhihuFragment extends BaseFragment implements RefreshLoadMoreLayout
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                me.jump(ZhihuDetailsActivity.class, new com.kongzue.baseframework.util.Parameter()
+                jump(ZhihuDetailsActivity.class, new com.kongzue.baseframework.util.Parameter()
                         .put("ZhihuBean", ZhihuBeanList.get(position))
                 );
             }

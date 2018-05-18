@@ -5,6 +5,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.kongzue.baseframework.BaseFragment;
+import com.kongzue.baseframework.interfaces.Layout;
 import com.kongzue.enjoylife.R;
 import com.kongzue.enjoylife.activity.VideoDetailsActivity;
 import com.kongzue.enjoylife.adapter.PhotoListAdapter;
@@ -20,6 +21,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+@Layout(R.layout.fragment_video)
 public class VideoFragment extends BaseFragment implements RefreshLoadMoreLayout.CallBack {
 
     private List<VideoListAdapter.VideoBean> VideoBeanList = new ArrayList<>();
@@ -27,11 +29,6 @@ public class VideoFragment extends BaseFragment implements RefreshLoadMoreLayout
 
     private RefreshLoadMoreLayout refreshView;
     private ListView listView;
-
-    @Override
-    public int getLayout() {
-        return R.layout.fragment_video;
-    }
 
     @Override
     public void initViews() {
@@ -111,7 +108,7 @@ public class VideoFragment extends BaseFragment implements RefreshLoadMoreLayout
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 VideoListAdapter.VideoBean videoBean = VideoBeanList.get(position);
                 if (videoBean.getType() == 0) {
-                    me.jump(VideoDetailsActivity.class, new com.kongzue.baseframework.util.Parameter().put("videoBean", videoBean));
+                    jump(VideoDetailsActivity.class, new com.kongzue.baseframework.util.Parameter().put("videoBean", videoBean));
                 }
             }
         });

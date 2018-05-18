@@ -11,11 +11,13 @@ import android.widget.TextView;
 
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.kongzue.baseframework.BaseActivity;
+import com.kongzue.baseframework.interfaces.Layout;
 import com.kongzue.baseframework.util.Parameter;
 import com.kongzue.enjoylife.R;
 import com.kongzue.enjoylife.adapter.VideoListAdapter;
 import com.kongzue.enjoylife.util.SwipBackActivity;
 
+@Layout(R.layout.activity_video_details)
 public class VideoDetailsActivity extends SwipBackActivity {
 
     private SimpleDraweeView image;
@@ -24,12 +26,6 @@ public class VideoDetailsActivity extends SwipBackActivity {
     private TextView txtTitle;
     private TextView txtTip;
     private TextView txtDescription;
-
-    @SuppressLint("MissingSuperCall")
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState, R.layout.activity_video_details);
-    }
 
     @Override
     public void initViews() {

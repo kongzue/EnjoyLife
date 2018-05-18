@@ -2,10 +2,10 @@
 每天一张精选倩图、一个精选小视频，一篇知乎美文。图片数据内容来源于图虫摄影网，视频数据来源于开眼视频
 
 <a href="https://github.com/kongzue/EnjoyLife/">
-<img src="https://img.shields.io/badge/EnjoyLife-1.0.0-green.svg" alt="EnjoyLife">
+<img src="https://img.shields.io/badge/EnjoyLife-1.1.0-green.svg" alt="EnjoyLife">
 </a>
 <a href="https://github.com/kongzue/EnjoyLife/">
-<img src="https://img.shields.io/badge/Release-1.0.0-blue.svg" alt="EnjoyLife">
+<img src="https://img.shields.io/badge/Release-1.1.0-blue.svg" alt="EnjoyLife">
 </a>
 <a href="http://www.apache.org/licenses/LICENSE-2.0">
 <img src="https://img.shields.io/badge/License-Apache%202.0-red.svg" alt="Maven">

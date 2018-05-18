@@ -14,6 +14,7 @@ import android.widget.RelativeLayout;
 
 import com.kongzue.baseframework.BaseActivity;
 import com.kongzue.baseframework.BaseFragment;
+import com.kongzue.baseframework.interfaces.Layout;
 import com.kongzue.dialog.util.BlurView;
 import com.kongzue.dialog.v2.DialogSettings;
 import com.kongzue.dialog.v2.MessageDialog;
@@ -26,6 +27,7 @@ import com.kongzue.enjoylife.fragment.ZhihuFragment;
 import static com.kongzue.dialog.v2.DialogSettings.TYPE_IOS;
 import static com.kongzue.dialog.v2.DialogSettings.TYPE_KONGZUE;
 
+@Layout(R.layout.activity_main)
 public class MainActivity extends BaseActivity {
 
     public final static int ID_PHOTO = 0;
@@ -45,13 +47,6 @@ public class MainActivity extends BaseActivity {
     private ImageView btnZhihu;
     private ImageView btnAbout;
 
-    @SuppressLint("MissingSuperCall")
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState, R.layout.activity_main);
-        setTranslucentStatus(true, true);
-    }
-
     @Override
     public void initViews() {
         frame = findViewById(R.id.frame);
@@ -66,6 +61,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void initDatas() {
+        setTranslucentStatus(true, true);
         blur.setOverlayColor(Color.argb(200, 235, 235, 235));
         blur.setRadius(me, 0, 0);
         boxTable.setLayoutParams(new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, dip2px(me, 50) + getStatusBarHeight()));

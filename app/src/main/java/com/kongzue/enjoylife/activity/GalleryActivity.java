@@ -26,6 +26,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.kongzue.baseframework.BaseActivity;
+import com.kongzue.baseframework.interfaces.Layout;
 import com.kongzue.baseframework.util.OnPermissionResponseListener;
 import com.kongzue.dialog.listener.DialogLifeCycleListener;
 import com.kongzue.dialog.listener.OnMenuItemClickListener;
@@ -52,6 +53,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
+@Layout(R.layout.activity_gallery)
 public class GalleryActivity extends BaseActivity {
 
     private ViewPager photoViewpager;
@@ -61,12 +63,6 @@ public class GalleryActivity extends BaseActivity {
     private LinearLayout boxTableChild;
     private LinearLayout btnBack;
     private ImageView btnShare;
-
-    @SuppressLint("MissingSuperCall")
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState, R.layout.activity_gallery);
-    }
 
     @Override
     public void initViews() {

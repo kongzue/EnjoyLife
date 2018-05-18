@@ -12,8 +12,9 @@ public abstract class SwipBackActivity extends BaseActivity {
     private SwipeBackHelper mSwipeBackHelper;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState, int layoutResId) {
-        super.onCreate(savedInstanceState, layoutResId);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
         mSwipeBackHelper = new SwipeBackHelper(this);
         mSwipeBackHelper.onCreate();
     }

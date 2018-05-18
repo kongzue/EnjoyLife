@@ -14,6 +14,7 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.kongzue.baseframework.BaseActivity;
+import com.kongzue.baseframework.interfaces.Layout;
 import com.kongzue.enjoylife.R;
 import com.kongzue.enjoylife.adapter.VideoListAdapter;
 import com.kongzue.enjoylife.view.CustomVideoView;
@@ -21,15 +22,10 @@ import com.shuyu.gsyvideoplayer.listener.LockClickListener;
 import com.shuyu.gsyvideoplayer.utils.OrientationUtils;
 import com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer;
 
+@Layout(R.layout.activity_video_player)
 public class VideoPlayerActivity extends BaseActivity {
 
     private CustomVideoView videoPlayer;
-
-    @SuppressLint("MissingSuperCall")
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState,R.layout.activity_video_player);
-    }
 
     @Override
     public void initViews() {

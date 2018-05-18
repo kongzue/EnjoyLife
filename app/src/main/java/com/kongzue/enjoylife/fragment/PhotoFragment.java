@@ -6,6 +6,7 @@ import android.widget.AdapterView;
 import android.widget.GridView;
 
 import com.kongzue.baseframework.BaseFragment;
+import com.kongzue.baseframework.interfaces.Layout;
 import com.kongzue.enjoylife.R;
 import com.kongzue.enjoylife.activity.GalleryActivity;
 import com.kongzue.enjoylife.adapter.PhotoListAdapter;
@@ -20,6 +21,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+@Layout(R.layout.fragment_photo)
 public class PhotoFragment extends BaseFragment implements RefreshLoadMoreLayout.CallBack {
 
     private List<PhotoListAdapter.GalleryBean> GalleryBeanList;
@@ -27,11 +29,6 @@ public class PhotoFragment extends BaseFragment implements RefreshLoadMoreLayout
 
     private RefreshLoadMoreLayout refreshView;
     private GridView gridView;
-
-    @Override
-    public int getLayout() {
-        return R.layout.fragment_photo;
-    }
 
     @Override
     public void initViews() {
@@ -104,7 +101,7 @@ public class PhotoFragment extends BaseFragment implements RefreshLoadMoreLayout
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                me.jump(GalleryActivity.class, new com.kongzue.baseframework.util.Parameter()
+                jump(GalleryActivity.class, new com.kongzue.baseframework.util.Parameter()
                         .put("GalleryBean",GalleryBeanList.get(position))
                 );
             }
