@@ -14,6 +14,8 @@
 <img src="https://img.shields.io/badge/Homepage-Kongzue.com-brightgreen.svg" alt="Maven">
 </a>
 
+Kongzue's Dialog、BaseFramework、BaseOkHttp框架的最佳实践Demo
+
 ![EnjoyLife](https://github.com/kongzue/Res/raw/master/app/src/main/res/mipmap-xxxhdpi/img_photo_onedayread_s.png)
 
 ### 体验版下载
@@ -23,6 +25,8 @@
 
 ### 声明
 「一日读」仅作学习交流之用，数据来源于图虫摄影、开眼视频以及知乎日报，数据接口均属于非正常渠道获取，请勿用于商业用途，原作公司拥有所有权利,如若涉及侵权，请联系删除。
+
+本项目由 @Kongzue 完成开发，灵感来源于 @Xiaohaibin 的原作开源项目“乐享”：https://github.com/xiaohaibin/EnjoyLife
 
 ### 开源协议
 ```
