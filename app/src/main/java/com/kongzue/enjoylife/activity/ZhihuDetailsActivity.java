@@ -13,6 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.kongzue.baseframework.BaseActivity;
+import com.kongzue.baseframework.interfaces.DarkStatusBarTheme;
 import com.kongzue.baseframework.interfaces.Layout;
 import com.kongzue.dialog.listener.OnMenuItemClickListener;
 import com.kongzue.dialog.util.BlurView;
@@ -34,6 +35,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Layout(R.layout.activity_zhihu_details)
+@DarkStatusBarTheme(true)
 public class ZhihuDetailsActivity extends SwipBackActivity {
 
     private WebView webView;
@@ -57,7 +59,6 @@ public class ZhihuDetailsActivity extends SwipBackActivity {
 
     @Override
     public void initDatas() {
-        setTranslucentStatus(true, true);
         blur.setOverlayColor(Color.argb(200, 235, 235, 235));
         blur.setRadius(me, 0, 0);
         boxTable.setLayoutParams(new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, dip2px(me, 50) + getStatusBarHeight()));

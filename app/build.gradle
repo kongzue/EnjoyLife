@@ -21,8 +21,8 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.kongzue.dialog:dialog:2.1.6'
-    implementation 'com.kongzue.baseframework:baseframework:6.3.0'
+    implementation 'com.kongzue.dialog:dialog:2.2.4'
+    implementation 'com.kongzue.baseframework:baseframework:6.4.8'
     implementation 'com.kongzue.kongzueupdatesdk:kongzueupdatesdk:1.4.0'
     implementation 'com.squareup.okhttp3:okhttp:3.3.1'
     implementation 'com.facebook.fresco:fresco:0.12.0'

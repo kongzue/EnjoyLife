@@ -2,6 +2,7 @@ package com.kongzue.enjoylife.activity;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.app.Dialog;
 import android.app.WallpaperManager;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -92,15 +93,15 @@ public class GalleryActivity extends BaseActivity {
         if (galleryBean.getImages() == null || galleryBean.getImages().isEmpty()) {
             TipDialog.show(me, "出错啦", TipDialog.SHOW_TIME_SHORT, TipDialog.TYPE_ERROR).setDialogLifeCycleListener(new DialogLifeCycleListener() {
                 @Override
-                public void onCreate(AlertDialog alertDialog) {
-
+                public void onCreate(Dialog alertDialog) {
+        
                 }
-
+    
                 @Override
-                public void onShow(AlertDialog alertDialog) {
-
+                public void onShow(Dialog alertDialog) {
+        
                 }
-
+    
                 @Override
                 public void onDismiss() {
                     finish();
