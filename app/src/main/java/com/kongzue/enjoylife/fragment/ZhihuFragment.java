@@ -74,12 +74,12 @@ public class ZhihuFragment extends BaseFragment implements RefreshLoadMoreLayout
                             String title = itemOfStoriesList.getString("title");
 
                             ZhihuBeanList.add(new ZhihuListAdapter.ZhihuBean(id, image, title));
-                            if (zhihuListAdapter == null) {
-                                zhihuListAdapter = new ZhihuListAdapter(me, ZhihuBeanList);
-                                listView.setAdapter(zhihuListAdapter);
-                            } else {
-                                zhihuListAdapter.notifyDataSetChanged();
-                            }
+                        }
+                        if (zhihuListAdapter == null) {
+                            zhihuListAdapter = new ZhihuListAdapter(me, ZhihuBeanList);
+                            listView.setAdapter(zhihuListAdapter);
+                        } else {
+                            zhihuListAdapter.notifyDataSetChanged();
                         }
                     } catch (Exception e) {
                         toast("解析故障");
